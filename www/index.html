@@ -31,7 +31,7 @@
     </head>
     <body>
         <div class="app">
-            <h1>PhoneGap3</h1>
+            <h1>PhoneGap4</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
@@ -41,15 +41,16 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-
+            alert('1')
             window.plugins.flashlight.available(function(isAvailable) {
   if (isAvailable) {
-
+alert('2')
     // switch on
     window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
 
     // switch off after 3 seconds
     setTimeout(function() {
+        alert('3')
       window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
     }, 3000);
 
